@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 9T9 Information Technology — Demo Site
+
+A premium, high-performance marketing site for **9T9 Information Technology**, an ERP and cyber security company based in Bahrain. Built with **Next.js 16**, **TypeScript**, **Tailwind CSS v4**, and **Framer Motion**.
+
+## Live Demo
+
+- **Production**: https://9t9it.vercel.app
+- **Custom domain**: https://9t9it.b0f.ru
+
+## About 9T9 IT
+
+9T9 Information Technology delivers ERP software and cyber security solutions for businesses across Bahrain, the GCC, the USA, and Europe. The company specializes in:
+
+- **ERPNext implementations** for retail, healthcare, manufacturing, education, real estate, and services.
+- **Cyber security services** including vulnerability assessments, firewalls, SIEM/XDR, PCI DSS, and Aramco CCC compliance.
+- **Specialized applications** such as offline POS, debt collection, helpdesk, cloud collaboration, and data insights.
+
+## Tech Stack
+
+- Next.js 16 with App Router
+- React 19 + TypeScript
+- Tailwind CSS v4
+- Framer Motion (scroll animations)
+- Phosphor Icons (light weight)
+- Geist Sans / Geist Mono + Playfair Display fonts
+- Static export for fast, reliable hosting on Vercel
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build & Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+The project is configured for static export and deploys automatically from the `main` branch via Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` — Next.js App Router pages
+- `components/` — Shared UI components (Header, Footer, Hero, Section, ServicePage)
+- `lib/site.ts` — Typed content module for all pages
+- `agent.md` — Scraped content inventory and design rules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository is a **demo / showcase build**. Content is derived from publicly available pages on `9t9it.com` and redesigned with a premium, agency-grade aesthetic.
