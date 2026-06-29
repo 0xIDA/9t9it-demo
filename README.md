@@ -49,7 +49,6 @@ The project is configured for static export and deploys automatically from the `
 - `app/` — Next.js App Router pages
 - `components/` — Shared UI components (Header, Footer, Hero, Section, ServicePage)
 - `lib/site.ts` — Typed content module for all pages
-- `agent.md` — Scraped content inventory and design rules
 
 ## Notes
 
